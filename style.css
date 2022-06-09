@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 20px;
+}
+ul li{
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    border-radius: 40px;
+    
+
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo a{
+    float: left;
+    width: 150px;
+    color: red; 
+    height: auto;
+    font-size: 30px;
+    font-weight: 100;
+    text-decoration: none;
+    padding-top:5px ;
+    margin-left: 30px;
+
+    }
+    .main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+        color: #fff;
+        text-align: center;
+    
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.title p{
+    color: #fff;
+    font-size: 17px;
+   
+    line-height: 25px;
+}
+button{
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 20px;
+    transition: 1s all ease;
+    margin-top: 10px;
+}
+button:hover{
+ background: black;
+
+ color: red;
+}
+.overlay{
+background: rgba(0, 0, 0, 0.6);
+height: 100vh;
+
+}
+.menu-icon{
+width: 28px;
+margin-left: 50px;
+display: none;
+}
+
+@media only screen and (max-width: 800px){
+.main ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+.main ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main ul li a{
+    color: #333;
+
+}
+.menu-icon{
+    display: block;
+    cursor: pointer;
+}
+.title h1{
+color: #fff;
+font-size: 50px;
+}
+.title p{
+color: #fff;
+font-size: 15px;
+max-width: 500px;
+}
+button{
+
+margin-top: 10px;
+}
+
+.title{
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+
+}
+}

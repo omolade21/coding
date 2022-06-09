@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(5, 0, 136, 0.5),rgba(5, 0, 136, 0.5)), url(fuse-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+font-size: 70px;
+font-weight: 600;
+}
+span{
+    color: #480db4;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm <span class="auto-type"></span></h1>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        var typed = new Typed(".auto-type", {
+            strings: ["Coding", "Sleeping", "Eating"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+
+    </script>
+</body>
+</html>
